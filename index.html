@@ -1,0 +1,43 @@
+<!doctype html><html lang='en'>
+<!--Hunter Brust
+    9/4/18
+    Simon Says Colors Recreated in the browser-->
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|PT+Sans:400,700" rel="stylesheet">
+    
+    
+    <!--Shortcut Icon(Tab Icon)-->
+    <link rel="shortcut icon" href="pics/favicon.png" />
+    
+    <!-- Title Goes Here -->
+    <title>Simon Says</title>
+</head>
+<body>
+    <header style="width:40%;margin-right:auto;margin-left:auto;text-align:center;">
+        <h1 id="title">Simon Says <span style="color:green">C</span><span style="color:red">o</span><span style="color:blue">l</span><span style="color:yellow">o</span><span style="color:lightgreen">r</span><span style="color:lightblue">s</span></h1>
+        
+        <h2 class="common" id="description" style="margin-top:0px;">Watch The Pattern and Repeat It</h2>
+        <h2 class="common" id="delete" style="margin-bottom:0px;">Choose Your Mode</h2>
+    </header>
+    
+    <div id="startbuttonzone">
+        <div class="startbutton" id="stack" style=""><h1>Stack Mode</h1><h4 class="tooltip">New Colors Stacked Onto End of Pattern</h4></div>
+        <div class="startbutton" id="random" style=""><h1 title="Color Pattern Randomly Generated and Changed.">Random Mode</h1><h4 class="tooltip">Color Pattern Changed Each Turn.</h4><h4 class="tooltip" style="color:white; top:-10px">1.5x Score</h4>
+        </div>
+    </div>
+    <div id="coloredsquarezone">
+        <div id="green" class="coloredsquare" style="background-color:green"></div>
+        <div id="red" class="coloredsquare" style="background-color:red"></div>
+        <div id="blue" class="coloredsquare" style="background-color:blue"></div>
+        <div id="gold" class="coloredsquare" style="background-color:gold"></div>
+    </div>
+    <h1 id="score"></h1>
+    <footer style="text-align:center;">
+        <p style="width:60%; text-align:center;margin-right:auto;margin-left:auto;display:inline-block;background-color:darkgray;max-width:900px">Website created and run by <span style="color:aqua" title="HunterBrust@gmail.com">Hunter Brust</span></p>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>
