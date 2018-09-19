@@ -1,0 +1,113 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+#startbuttonzone{
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:500px;
+}
+.startbutton{
+    float:left;
+    width:48%;
+    text-align:center;
+    background-color: black;
+    color:white;
+    font-size: 13px;
+    cursor:pointer;
+    border: 2px solid gray;
+    font-family: 'PT Sans', sans-serif;
+}
+.startbutton:hover{
+    transition-duration: 0.3s;
+    transform: scale(1.05);
+    background-color:gray;
+    color:black;
+    border-color:black;
+}
+
+#coloredsquarezone{
+    width: 50%;
+    background-color:gray;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:500px;
+}
+.coloredsquare{
+    width: 48%;
+    float: left;
+    border: 3px solid black;
+    padding-top: 50%;
+    cursor: pointer;
+    transition-duration: 0s;
+}
+.tooltip{
+    padding: 0px;
+    visibility: hidden;
+    top: 27px;
+    right:5%;
+    left:5%;
+    position:absolute;
+    color: black;
+    text-align: center;
+    font-size: 11px;
+}
+.startbutton:hover .tooltip{
+    visibility:visible;
+} 
+
+.common{
+    font-weight:400;
+    font-size:1.5vw;
+}
+#title{
+    font-size:3vw;
+    padding:0px;
+    margin-bottom:0px;
+    font-family: 'PT Sans', sans-serif;
+}
+#score{
+    width:30%;
+    margin-right:auto;
+    margin-left:auto;
+    text-align:center;
+}
+h1{
+    font-size:25px;
+}
+
+@media only screen and (max-width: 600px){
+    .coloredsquare{
+        border: 2px solid black;
+    }
+    .startbutton{
+        font-size: 7px;
+    }
+    h1{
+        font-size:15px;
+    }
+    
+    
+    
+    
+}
+@media only screen and (max-width: 350px){
+    .coloredsquare{
+        border: 1px solid black;
+    }
+    .startbutton{
+        font-size: 5px;
+    }
+    
+    
+}
+@media only screen and (min-width: 1120px){
+    #title{
+        font-size:30pt;
+    }
+    .common{
+        font-size:17pt;
+    }
+}
